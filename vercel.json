@@ -1,12 +1,13 @@
 {
-  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
     { "src": "/servicos", "dest": "/servicos.html" },
     { "src": "/contactos", "dest": "/contactos.html" },
     { "src": "/termos-condicoes", "dest": "/termos-condicoes.html" },
     { "src": "/politica-privacidade", "dest": "/politica-privacidade.html" },
     { "src": "/livro-reclamacoes", "dest": "/livro-reclamacoes.html" }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }

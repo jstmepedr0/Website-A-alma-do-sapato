@@ -1,0 +1,7 @@
+{
+  "name": "website-a-alma-do-sapato",
+  "private": true,
+  "scripts": {
+    "build": "sh scripts/vercel-build.sh"
+  }
+}
