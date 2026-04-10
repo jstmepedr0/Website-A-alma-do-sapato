@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Fiães — Sapataria em Faro</title>
+    <meta name="description" content="Conserto de todo o tipo de sapatos no Mercado Municipal de Faro. Reparação, manutenção e restauro com experiência e dedicação." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f8f8f6; --surface: #ffffff; --surface-2: #f1f1ef; --surface-3: #e5e5e2;
+        --text: #1a1a1a; --text-2: #525252; --text-3: #909090;
+        --line: rgba(0,0,0,0.07); --line-strong: rgba(0,0,0,0.13);
+        --r-sm: 8px; --r-md: 16px; --r-lg: 24px; --r-xl: 32px; --r-pill: 999px;
+        --w: 1160px; --e: cubic-bezier(0.22,1,0.36,1); --e-in: cubic-bezier(0.4,0,0.2,1); --t: 0.55s;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="public/images/logo.png" alt="Atelier Fiães" />
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav">
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contactos.html">Contactos</a>
+          </nav>
+          <a class="header-cta" href="tel:+351934117937">934 117 937</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg">
+          <img src="public/images/unnamed.jpg" alt="Loja Atelier Fiães" />
+        </div>
+        <div class="hero-body">
+          <p class="hero-eyebrow">Mercado Municipal de Faro</p>
+          <h1>O seu calçado,<br><em>cuidado</em> de raiz.</h1>
+          <p class="hero-sub">Reparação, manutenção e restauro de todo o tipo de sapatos. Atendimento presencial no coração de Faro.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="servicos.html">Ver serviços</a>
+            <a class="btn btn-outline" href="contactos.html">Como chegar</a>
+          </div>
+          <div class="hero-chips">
+            <span class="hero-chip">Piso 1, Loja 3-C 115</span>
+            <span class="hero-chip">Atendimento presencial</span>
+            <span class="hero-chip">934 117 937</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section">
+        <div class="wrap">
+          <div class="sh center reveal">
+            <span class="sh-label">O que fazemos</span>
+            <h2>Cuidado completo<br>para o seu calçado</h2>
+            <p>Cada par de sapatos tem a sua história. Nós tratamos de a prolongar.</p>
+          </div>
+          <div class="services-grid">
+            <div class="service-item reveal reveal-delay-1">
+              <p class="service-num">01</p>
+              <h3>Reparação</h3>
+              <p>Substituição de solas, tacões, colagens e costuras para prolongar a vida útil do calçado.</p>
+            </div>
+            <div class="service-item reveal reveal-delay-2">
+              <p class="service-num">02</p>
+              <h3>Manutenção</h3>
+              <p>Limpeza, hidratação, proteção e conservação de pele, camurça e materiais sintéticos.</p>
+            </div>
+            <div class="service-item reveal reveal-delay-3">
+              <p class="service-num">03</p>
+              <h3>Restauro</h3>
+              <p>Intervenções completas para recuperar o aspeto e a funcionalidade de pares com uso intensivo.</p>
+            </div>
+            <div class="service-item reveal reveal-delay-1">
+              <p class="service-num">04</p>
+              <h3>Cópias de Chaves & Comandos</h3>
+              <p>Duplicação de chaves de porta, carro e segredos, e cópias de comandos de garagem e portão.</p>
+            </div>
+            <div class="service-item reveal reveal-delay-2">
+              <p class="service-num">05</p>
+              <h3>Pilhas para Relógios</h3>
+              <p>Substituição de pilhas para todo o tipo de relógios. Rápido, no mesmo dia.</p>
+            </div>
+            <div class="service-item reveal reveal-delay-3">
+              <p class="service-num">06</p>
+              <h3>Costuras em Malas</h3>
+              <p>Reparação e reforço de costuras em malas de pele, tecido e materiais sintéticos.</p>
+            </div>
+          </div>
+          <div class="stats-bar reveal">
+            <div class="stat-item">
+              <div class="stat-num">+20</div>
+              <div class="stat-label">Anos de experiência</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">6</div>
+              <div class="stat-label">Serviços disponíveis</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">6×</div>
+              <div class="stat-label">Seg–Sáb abertos</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPLIT — foto + features -->
+      <section class="section section-tint">
+        <div class="wrap">
+          <div class="split">
+            <div class="split-media reveal">
+              <img src="public/images/loja.jpg" alt="Loja Atelier Fiães no Mercado Municipal de Faro" />
+              <div class="split-tag">
+                Atelier Fiães
+                <span>Mercado Municipal de Faro, Piso 1</span>
+              </div>
+            </div>
+            <div class="split-content reveal reveal-delay-2">
+              <div class="sh">
+                <span class="sh-label">Porquê escolher-nos</span>
+                <h2>Proximidade,<br>experiência e rigor.</h2>
+                <p>Um serviço especializado com atendimento direto e honesto. Cada cliente sai com o calçado avaliado e um prazo claro.</p>
+              </div>
+              <div class="feature-list">
+                <div class="feature-row">
+                  <div class="feature-icon">LOC</div>
+                  <div class="feature-text">
+                    <strong>Localização central</strong>
+                    <span>Dentro do Mercado Municipal de Faro, acessível a pé ou de carro.</span>
+                  </div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-icon">ESP</div>
+                  <div class="feature-text">
+                    <strong>Serviço especializado</strong>
+                    <span>Conserto de todo o tipo de sapatos, com diagnóstico presencial e rigoroso.</span>
+                  </div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-icon">ATD</div>
+                  <div class="feature-text">
+                    <strong>Atendimento próximo</strong>
+                    <span>Explicamos o trabalho a realizar, o custo e o prazo antes de qualquer intervenção.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section">
+        <div class="wrap">
+          <div class="sh center reveal">
+            <span class="sh-label">Como funciona</span>
+            <h2>Simples, direto, transparente.</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step reveal reveal-delay-1">
+              <div class="process-num">01</div>
+              <h4>Traga o calçado</h4>
+              <p>Leve os seus sapatos à loja para avaliação presencial.</p>
+            </div>
+            <div class="process-step reveal reveal-delay-2">
+              <div class="process-num">02</div>
+              <h4>Diagnóstico</h4>
+              <p>Analisamos o estado e indicamos a intervenção mais adequada.</p>
+            </div>
+            <div class="process-step reveal reveal-delay-3">
+              <div class="process-num">03</div>
+              <h4>Prazo e condições</h4>
+              <p>Informamos o tempo necessário e o custo do serviço.</p>
+            </div>
+            <div class="process-step reveal reveal-delay-4">
+              <div class="process-num">04</div>
+              <h4>Levantamento</h4>
+              <p>Entrega do calçado após confirmação de conclusão do serviço.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section-sm">
+        <div class="wrap">
+          <div class="cta-band reveal">
+            <div>
+              <h2>O seu calçado merece uma segunda vida.</h2>
+              <p>Passe pelo Mercado Municipal ou ligue para saber como podemos ajudar.</p>
+            </div>
+            <div class="cta-band-actions">
+              <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.25)" href="tel:+351934117937">934 117 937</a>
+              <a class="btn" style="background:#fff;color:var(--text)" href="contactos.html">Ver contactos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <strong>Atelier Fiães</strong>
+            <p>Conserto de todo o tipo de sapatos no Mercado Municipal de Faro.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="termos-condicoes.html">Termos e Condições</a></li>
+              <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+              <li><a href="livro-reclamacoes.html">Livro de Reclamações</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span data-year></span> Atelier Fiães. Todos os direitos reservados.</p>
+          <p>Mercado Municipal de Faro, Piso 1, Loja 3-C 115</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
