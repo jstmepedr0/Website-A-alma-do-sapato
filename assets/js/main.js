@@ -65,6 +65,79 @@
     reveals.forEach((el) => el.classList.add('is-visible'));
   }
 
+  /* ===== HERO SPLIT SLIDER ===== */
+  const heroSplit = document.querySelector('.hero-split');
+  if (heroSplit) {
+    const slides      = heroSplit.querySelectorAll('.hero-slide');
+    const texts       = heroSplit.querySelectorAll('.hero-text');
+    const dots        = heroSplit.querySelectorAll('.hero-dot');
+    const progressBar = heroSplit.querySelector('.hero-progress-bar');
+    const counterEl   = heroSplit.querySelector('.hero-counter-current');
+    const DURATION    = 5000;
+    let current = 0;
+    let timer   = null;
+
+    function goTo(idx) {
+      slides[current].classList.remove('is-active');
+      texts[current]?.classList.remove('is-active');
+      dots[current]?.classList.remove('is-active');
+
+      current = ((idx % slides.length) + slides.length) % slides.length;
+
+      slides[current].classList.add('is-active');
+      texts[current]?.classList.add('is-active');
+      dots[current]?.classList.add('is-active');
+
+      if (current === 0) {
+        document.body.classList.remove('hero-nav-white');
+      } else {
+        document.body.classList.add('hero-nav-white');
+      }
+
+      if (counterEl) counterEl.textContent = String(current + 1).padStart(2, '0');
+
+      // Reset & animate progress bar
+      if (progressBar) {
+        progressBar.style.transition = 'none';
+        progressBar.style.width = '0%';
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          progressBar.style.transition = `width ${DURATION}ms linear`;
+          progressBar.style.width = '100%';
+        }));
+      }
+    }
+
+    function startAuto() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(current + 1), DURATION);
+    }
+
+    // Boot
+    goTo(0);
+    startAuto();
+
+    // Dot clicks
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startAuto(); }));
+
+    // Pause on hover
+    heroSplit.addEventListener('mouseenter', () => clearInterval(timer));
+    heroSplit.addEventListener('mouseleave', startAuto);
+
+    // Keyboard arrows
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft')  { goTo(current - 1); startAuto(); }
+      if (e.key === 'ArrowRight') { goTo(current + 1); startAuto(); }
+    });
+
+    // Touch swipe
+    let touchX = 0;
+    heroSplit.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+    heroSplit.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 40) { goTo(dx < 0 ? current + 1 : current - 1); startAuto(); }
+    });
+  }
+
   /* ===== CONTACT FORM ===== */
   const form = document.querySelector('.contact-form');
   if (form) {

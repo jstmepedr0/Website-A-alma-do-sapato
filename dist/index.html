@@ -45,22 +45,105 @@
     <main>
 
       <!-- HERO -->
-      <section class="hero">
-        <div class="hero-bg">
-          <img src="images/unnamed.jpg" alt="Loja Atelier Fiães" />
-        </div>
-        <div class="hero-body">
-          <p class="hero-eyebrow">Mercado Municipal de Faro</p>
-          <h1>O seu calçado,<br><em>cuidado</em> de raiz.</h1>
-          <p class="hero-sub">Reparação, manutenção e restauro de todo o tipo de sapatos. Atendimento presencial no coração de Faro.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="servicos.html">Ver serviços</a>
-            <a class="btn btn-outline" href="contactos.html">Como chegar</a>
+      <section class="hero" data-hero-slider>
+        <div class="hero-shell">
+          <div class="hero-slides">
+            <article class="hero-slide is-active" data-hero-slide>
+              <div class="hero-body">
+                <p class="hero-eyebrow">Mercado Municipal de Faro</p>
+                <p class="hero-theme">Sapatos</p>
+                <h1>O seu calçado,<br><em>cuidado</em> de raiz.</h1>
+                <p class="hero-sub">Reparação, manutenção e restauro de todo o tipo de sapatos com atenção ao detalhe e acabamento de confiança.</p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="servicos.html">Ver serviços</a>
+                  <a class="btn btn-outline" href="contactos.html">Como chegar</a>
+                </div>
+                <div class="hero-chips">
+                  <span class="hero-chip">Piso 1, Loja 3-C 115</span>
+                  <span class="hero-chip">Atendimento presencial</span>
+                  <span class="hero-chip">934 117 937</span>
+                </div>
+              </div>
+              <div class="hero-media">
+                <img src="images/hero-sapatos.jpg" alt="Sapatos em destaque no Atelier Fiães" />
+              </div>
+            </article>
+
+            <article class="hero-slide" data-hero-slide>
+              <div class="hero-body">
+                <p class="hero-eyebrow">Mercado Municipal de Faro</p>
+                <p class="hero-theme">Chaves</p>
+                <h1>Cópias rápidas,<br><em>feitas no ponto.</em></h1>
+                <p class="hero-sub">Duplicação de chaves de porta, carro e segredos, com um atendimento direto e claro no momento da entrega.</p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="servicos.html">Ver serviços</a>
+                  <a class="btn btn-outline" href="contactos.html">Falar connosco</a>
+                </div>
+                <div class="hero-chips">
+                  <span class="hero-chip">Cópias de chaves</span>
+                  <span class="hero-chip">Segredos e carro</span>
+                  <span class="hero-chip">Serviço rápido</span>
+                </div>
+              </div>
+              <div class="hero-media">
+                <img src="images/hero-chaves.png" alt="Serviço de cópias de chaves no Atelier Fiães" />
+              </div>
+            </article>
+
+            <article class="hero-slide" data-hero-slide>
+              <div class="hero-body">
+                <p class="hero-eyebrow">Mercado Municipal de Faro</p>
+                <p class="hero-theme">Relógios</p>
+                <h1>Pilhas novas,<br><em>sem complicações.</em></h1>
+                <p class="hero-sub">Substituição de pilhas para relógios com serviço ágil, ideal para quem quer resolver no próprio dia.</p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="servicos.html">Explorar serviços</a>
+                  <a class="btn btn-outline" href="contactos.html">Visitar loja</a>
+                </div>
+                <div class="hero-chips">
+                  <span class="hero-chip">Pilhas para relógios</span>
+                  <span class="hero-chip">Mesmo dia</span>
+                  <span class="hero-chip">Atendimento próximo</span>
+                </div>
+              </div>
+              <div class="hero-media">
+                <img src="images/hero-relogios.png" alt="Substituição de pilhas para relógios no Atelier Fiães" />
+              </div>
+            </article>
+
+            <article class="hero-slide" data-hero-slide>
+              <div class="hero-body">
+                <p class="hero-eyebrow">Mercado Municipal de Faro</p>
+                <p class="hero-theme">Malas</p>
+                <h1>Costuras que<br><em>voltam a durar.</em></h1>
+                <p class="hero-sub">Reforço e reparação de costuras em malas de pele, tecido e materiais sintéticos, com foco na durabilidade.</p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="servicos.html">Ver trabalhos</a>
+                  <a class="btn btn-outline" href="contactos.html">Pedir informação</a>
+                </div>
+                <div class="hero-chips">
+                  <span class="hero-chip">Costuras em malas</span>
+                  <span class="hero-chip">Pele e tecido</span>
+                  <span class="hero-chip">Acabamento rigoroso</span>
+                </div>
+              </div>
+              <div class="hero-media">
+                <img src="images/hero-malas.png" alt="Serviço de reparação de malas no Atelier Fiães" />
+              </div>
+            </article>
           </div>
-          <div class="hero-chips">
-            <span class="hero-chip">Piso 1, Loja 3-C 115</span>
-            <span class="hero-chip">Atendimento presencial</span>
-            <span class="hero-chip">934 117 937</span>
+
+          <div class="hero-slider-ui">
+            <div class="hero-slider-nav" role="tablist" aria-label="Temas em destaque">
+              <button class="hero-slider-dot is-active" type="button" data-hero-dot="0" aria-label="Mostrar slide Sapatos"></button>
+              <button class="hero-slider-dot" type="button" data-hero-dot="1" aria-label="Mostrar slide Chaves"></button>
+              <button class="hero-slider-dot" type="button" data-hero-dot="2" aria-label="Mostrar slide Relógios"></button>
+              <button class="hero-slider-dot" type="button" data-hero-dot="3" aria-label="Mostrar slide Malas"></button>
+            </div>
+            <div class="hero-slider-controls">
+              <button class="hero-slider-arrow" type="button" data-hero-prev aria-label="Slide anterior">Anterior</button>
+              <button class="hero-slider-arrow" type="button" data-hero-next aria-label="Slide seguinte">Seguinte</button>
+            </div>
           </div>
         </div>
       </section>

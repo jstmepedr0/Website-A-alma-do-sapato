@@ -7,7 +7,7 @@
     <meta name="description" content="Conserto de todo o tipo de sapatos no Mercado Municipal de Faro. Reparação, manutenção e restauro com experiência e dedicação." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet" />
     <style>
       :root {
         --bg: #f8f8f6; --surface: #ffffff; --surface-2: #f1f1ef; --surface-3: #e5e5e2;
@@ -45,24 +45,68 @@
     <main>
 
       <!-- HERO -->
-      <section class="hero">
-        <div class="hero-bg">
-          <img src="public/images/unnamed.jpg" alt="Loja Atelier Fiães" />
+      <section class="hero hero-split">
+
+        <!-- Slider de fundo — full screen -->
+        <div class="hero-slider">
+          <div class="hero-slide is-active">
+            <img src="public/images/hero-sapatos.jpg" alt="Reparação de calçado" />
+          </div>
+          <div class="hero-slide">
+            <img src="public/images/hero-chaves.png" alt="Cópias de chaves e comandos" />
+          </div>
+          <div class="hero-slide">
+            <img src="public/images/hero-relogios.png" alt="Pilhas para relógios" />
+          </div>
+          <div class="hero-slide">
+            <img src="public/images/hero-malas.png" alt="Costuras em malas" />
+          </div>
         </div>
+
+        <!-- Texto em baixo à esquerda (estilo original) -->
         <div class="hero-body">
           <p class="hero-eyebrow">Mercado Municipal de Faro</p>
-          <h1>O seu calçado,<br><em>cuidado</em> de raiz.</h1>
-          <p class="hero-sub">Reparação, manutenção e restauro de todo o tipo de sapatos. Atendimento presencial no coração de Faro.</p>
+
+          <div class="hero-texts">
+            <div class="hero-text is-active">
+              <h1>O seu calçado,<br><em>cuidado</em> de raiz.</h1>
+              <p class="hero-sub">Reparação, manutenção e restauro de todo o tipo de sapatos. Atendimento presencial no coração de Faro.</p>
+            </div>
+            <div class="hero-text">
+              <h1>Chaves e comandos,<br><em>prontos</em> no momento.</h1>
+              <p class="hero-sub">Duplicação de chaves de porta, carro e segredos. Cópias de comandos de garagem e portão.</p>
+            </div>
+            <div class="hero-text">
+              <h1>Pilhas para relógios,<br><em>serviço</em> no mesmo dia.</h1>
+              <p class="hero-sub">Substituição rápida de pilhas para todo o tipo de relógios. Sem espera.</p>
+            </div>
+            <div class="hero-text">
+              <h1>Costuras em malas,<br><em>restauro</em> cuidado.</h1>
+              <p class="hero-sub">Reparação e reforço de costuras em malas de pele, tecido e materiais sintéticos.</p>
+            </div>
+          </div>
+
           <div class="hero-actions">
             <a class="btn btn-primary" href="servicos.html">Ver serviços</a>
             <a class="btn btn-outline" href="contactos.html">Como chegar</a>
           </div>
+
           <div class="hero-chips">
             <span class="hero-chip">Piso 1, Loja 3-C 115</span>
             <span class="hero-chip">Atendimento presencial</span>
             <span class="hero-chip">934 117 937</span>
           </div>
+
+          <div class="hero-dots" style="margin-top:2rem;">
+            <button class="hero-dot is-active" aria-label="Slide 1"></button>
+            <button class="hero-dot" aria-label="Slide 2"></button>
+            <button class="hero-dot" aria-label="Slide 3"></button>
+            <button class="hero-dot" aria-label="Slide 4"></button>
+          </div>
         </div>
+
+        <div class="hero-progress"><div class="hero-progress-bar"></div></div>
+
       </section>
 
       <!-- SERVICES -->
@@ -74,32 +118,32 @@
             <p>Cada par de sapatos tem a sua história. Nós tratamos de a prolongar.</p>
           </div>
           <div class="services-grid">
-            <div class="service-item reveal reveal-delay-1">
+            <div class="service-item reveal reveal-delay-1" data-num="01">
               <p class="service-num">01</p>
               <h3>Reparação</h3>
               <p>Substituição de solas, tacões, colagens e costuras para prolongar a vida útil do calçado.</p>
             </div>
-            <div class="service-item reveal reveal-delay-2">
+            <div class="service-item reveal reveal-delay-2" data-num="02">
               <p class="service-num">02</p>
               <h3>Manutenção</h3>
               <p>Limpeza, hidratação, proteção e conservação de pele, camurça e materiais sintéticos.</p>
             </div>
-            <div class="service-item reveal reveal-delay-3">
+            <div class="service-item reveal reveal-delay-3" data-num="03">
               <p class="service-num">03</p>
               <h3>Restauro</h3>
               <p>Intervenções completas para recuperar o aspeto e a funcionalidade de pares com uso intensivo.</p>
             </div>
-            <div class="service-item reveal reveal-delay-1">
+            <div class="service-item reveal reveal-delay-1" data-num="04">
               <p class="service-num">04</p>
               <h3>Cópias de Chaves & Comandos</h3>
               <p>Duplicação de chaves de porta, carro e segredos, e cópias de comandos de garagem e portão.</p>
             </div>
-            <div class="service-item reveal reveal-delay-2">
+            <div class="service-item reveal reveal-delay-2" data-num="05">
               <p class="service-num">05</p>
               <h3>Pilhas para Relógios</h3>
               <p>Substituição de pilhas para todo o tipo de relógios. Rápido, no mesmo dia.</p>
             </div>
-            <div class="service-item reveal reveal-delay-3">
+            <div class="service-item reveal reveal-delay-3" data-num="06">
               <p class="service-num">06</p>
               <h3>Costuras em Malas</h3>
               <p>Reparação e reforço de costuras em malas de pele, tecido e materiais sintéticos.</p>
