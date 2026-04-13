@@ -1163,6 +1163,7 @@ ul, ol { list-style: none; }
   }
 
   .site-nav {
+    display: flex;
     position: fixed;
     inset: 68px 0 auto;
     flex-direction: column;
@@ -1183,11 +1184,10 @@ ul, ol { list-style: none; }
     padding: 0.85rem 1rem;
     font-size: 1rem;
     border-radius: var(--r-sm);
+    color: var(--text-2) !important;
+    background: none !important;
   }
-
-  .header-cta {
-    display: none;
-  }
+  .site-nav a:hover { color: var(--text) !important; background: var(--surface-2) !important; }
 }
 
 @media (max-width: 480px) {
